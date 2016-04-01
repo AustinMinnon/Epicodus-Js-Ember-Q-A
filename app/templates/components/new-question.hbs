@@ -1,0 +1,30 @@
+{{yield}}
+{{#if addNewQuestion}}
+  <h2>Ask Me Anything:</h2>
+    <div>
+      <form class="form-group">
+        <div>
+          <label for="content">Question</label>
+          {{input value=content id="content"}}
+        </div>
+        <div>
+          <label for="author">Your Name</label>
+          {{input value=author id="author"}}
+        </div>
+        <div>
+          <label for="note">Comments</label>
+          {{input value=note id="note"}}
+        </div>
+
+        <button {{action 'saveQuestion'}}>Save</button>
+        <button {{action 'cancel'}}>Cancel</button>
+      </form>
+    </div>
+
+
+    {{else}}
+    <div class="container">
+      <br>
+      <button class="btn btn-success" {{action 'questionFormShow'}}>Ask a Question</button>
+    </div>
+    {{/if}}

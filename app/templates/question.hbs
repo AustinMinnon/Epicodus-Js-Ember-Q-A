@@ -1,0 +1,10 @@
+{{outlet}}
+{{question-details question=model destroyQuestion = "destroyQuestion"}}
+<div>
+  {{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+  {{/each}}
+</div>
+{{update-question question=model update="update"}}
+
+{{new-answer saveAnswer="saveAnswer" question=model}}

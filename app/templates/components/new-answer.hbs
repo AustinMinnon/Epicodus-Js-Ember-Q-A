@@ -1,0 +1,26 @@
+{{yield}}
+{{#if addNewAnswer}}
+  <h2>Answer Below:</h2>
+    <div>
+      <form class="form-group">
+        <div>
+          <label for="reply">Your Answer</label>
+          {{input value=reply id="reply"}}
+        </div>
+        <div>
+          <label for="author">Username</label>
+          {{input value=author id="author"}}
+        </div>
+
+        <button {{action 'saveAnswer' question}}>Save</button>
+        <button {{action 'cancel'}}>Cancel</button>
+      </form>
+    </div>
+
+
+    {{else}}
+    <div class="container">
+      <br>
+      <button class="btn btn-info" {{action 'answerFormShow'}}>Help Answer Question</button>
+    </div>
+    {{/if}}

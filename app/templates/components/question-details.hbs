@@ -1,0 +1,17 @@
+{{yield}}
+
+<h3><strong>{{question.content}}</strong></h3>
+<hr>
+
+<h4>Comments:</h4>
+<h5>{{question.note}}</h5>
+
+<h4>Asked by:</h4>
+<h4><em>{{question.author}}</em></h4>
+<button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button>
+
+<ul>
+{{#each model.answers as |answer|}}
+  {{comment.reply}}
+{{/each}}
+</ul>
