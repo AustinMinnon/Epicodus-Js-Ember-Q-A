@@ -11,12 +11,10 @@ export default Ember.Component.extend({
         content: this.get('content') ? this.get('content') :"question",
         author: this.get('author') ? this.get('author') :"author",
         note: this.get('note') ? this.get('note') :"",
+        category: this.get('category') ? this.get('category'):""
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);
     },
-    cancel(){
-      this.set('addNewQuestion', false);
-    }
   }
 });
