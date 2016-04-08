@@ -1,10 +1,11 @@
-{{outlet}}
-{{question-details question=model destroyQuestion = "destroyQuestion"}}
+<div class="container">
+
+{{question-details question=model destroyQuestion = "destroyQuestion" update="update"}}
+{{update-question question=model update="update"}}
 <div>
   {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
   {{/each}}
 </div>
-{{update-question question=model update="update"}}
-
 {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>

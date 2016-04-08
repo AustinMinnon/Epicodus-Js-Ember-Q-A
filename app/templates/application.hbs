@@ -1,14 +1,15 @@
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-      </ul>
-    </div>
-  </nav>
-  <br>
-  <header>
-  <div class="jumbotron">
-    <h2 class="Headington">Queue Questions, Austin Answers</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <span>{{#link-to 'index'}}<button class="btn btn-primary">Home</button>{{/link-to}}</span>
+      <span>{{#link-to 'index'}}<button class="btn btn-primary">Categories</button>{{/link-to}}</span>
+      <span class="Headington">Queue Questions / Austin Answers</span>
+    </ul>
   </div>
-</header>
+</nav>
+<br>
+  <div class="jumbotron">
+    <div class="container">
+    </div>
+  </div>
 {{outlet}}

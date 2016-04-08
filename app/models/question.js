@@ -12,6 +12,5 @@ export default DS.Model.extend({
       newAnswer.save();
       this.refresh();
     }
-    
   }
 });

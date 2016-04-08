@@ -1,3 +1,26 @@
-.headington{
+div span{
+  padding: 3px;
   text-align: center;
+  color: #ff6600;
+  font-size: 25px;
+}
+.Headington{
+  margin: 7px;
+  text-align: right;
+
+}
+.jumbotron {
+  margin-top: 2px;
+  background: url("/../qbg.jpg") center ;
+  height: 225px;
+  width: 100%;
+}
+.questions{
+  align-items: center;
+}
+li{
+  list-style: none;
+}
+.question{
+  text-decoration: underline;
 }
