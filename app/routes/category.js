@@ -19,6 +19,7 @@ export default Ember.Route.extend({
   saveQuestion(params) {
     var newQuestion = this.store.createRecord('question', params);
     var category = params.category;
+    debugger;
     category.get('questions').addObject(newQuestion);
     newQuestion.save().then(function() {
       return category.save();
@@ -29,26 +30,5 @@ export default Ember.Route.extend({
       question.destroyRecord();
       this.transitionTo('index');
     },
-    saveAnswer(params) {
-      var newAnswer = this.store.createRecord('answer', params);
-      var question = params.question;
-      question.get('answers').addObject(newAnswer);
-      newAnswer.save().then(function() {
-        return question.save();
-      });
-      this.transitionTo('index');
-    },
-    editAnswer(answer, params) {
-    Object.keys(params).forEach(function(key) {
-      if(params[key] !== undefined) {
-        answer.set(key,params[key]);
-      }
-    });
-    answer.save();
-    this.transitionTo('question', params.question);
-  },
-    delete(answer) {
-      answer.destroyRecord();
-    }
   }
 });

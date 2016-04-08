@@ -24,3 +24,9 @@ li{
 .question{
   text-decoration: underline;
 }
+.welcome{
+  text-align: center;
+}
+.categoryList{
+  font-size: 25px;
+}

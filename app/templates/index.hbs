@@ -1,16 +1,20 @@
+<h3 class="welcome">Welcome, find advice through the categories pages.</h3>
 <div class="container">
-  {{outlet}}
-</div>
+  <div class="container categories">
+    <h3 class="categoryList">Categories:
+    {{#each model.categories as |category|}}
+    {{#link-to 'category' category.id}}{{category.title}}{{/link-to}}
+    {{/each}}</h3>
+  </div>
+  <br><br>
 
 <div class="container">
   {{#each model.questions as |question|}}
      {{question-tile question=question}}
   {{/each}}
 </div>
-<div class="container">
-  {{#each model.categories as |category|}}
-  {{#link-to 'category' category.id}}{{category.title}}{{/link-to}}
-  {{/each}}
+
+
 </div>
 
 {{new-category  saveCategory="saveCategory"}}

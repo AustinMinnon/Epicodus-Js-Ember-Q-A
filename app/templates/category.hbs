@@ -1,13 +1,4 @@
 <div class="container">
 {{new-question saveQuestion="saveQuestion" category=model}}
-{{question-details question=model destroyQuestion = "destroyQuestion" update="update"}}
-{{update-question question=model update="update"}}
-<div>
-  {{#each categoryQuestions as |question|}}
-  {{question.title}}
-  {{/each}}
-  <!-- {{question-tile question=question}} -->
-
-</div>
-{{new-answer saveAnswer="saveAnswer" question=model}}
+{{category-detail category=model}}
 </div>
