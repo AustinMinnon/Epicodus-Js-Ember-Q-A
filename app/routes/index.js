@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
-      answers: this.store.findAll('answer')
+      categories: this.store.findAll('category')
     });
   },
   actions: {
@@ -17,6 +17,11 @@ export default Ember.Route.extend({
       var newAnswer = this.store.createRecord('answer', params);
       newAnswer.save();
       this.transitionTo('index');
-    }
+    },
+    saveCategory(params) {
+      var newCategory = this.store.createRecord('category', params);
+      newCategory.save();
+      this.transitionTo('index');
+    },
   }
 });

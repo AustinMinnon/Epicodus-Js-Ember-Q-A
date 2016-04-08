@@ -7,5 +7,11 @@
      {{question-tile question=question}}
   {{/each}}
 </div>
+<div class="container">
+  {{#each model.categories as |category|}}
+  {{#link-to 'category' category.id}}{{category.title}}{{/link-to}}
+  {{/each}}
+</div>
 
 {{new-question saveQuestion="saveQuestion" question=model}}
+{{new-category  saveCategory="saveCategory"}}

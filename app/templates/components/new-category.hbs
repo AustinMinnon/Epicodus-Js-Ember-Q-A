@@ -1,0 +1,25 @@
+{{#if addNewCategory}}
+<h2>New Questions Category:</h2>
+  <div>
+    <form class="form-group">
+      <div>
+        <label for="title">Category Title</label>
+        {{input value=title id="title"}}
+      </div>
+      <div>
+        <label for="description">Description</label>
+        {{input value=description id="description"}}
+      </div>
+
+      <button {{action 'saveCategory'}}>Save</button>
+      <button {{action 'cancel'}}>Cancel</button>
+    </form>
+  </div>
+
+
+  {{else}}
+  <div class="container">
+    <br>
+    <button class="btn btn-success" {{action 'categoryFormShow'}}>Add Category</button>
+  </div>
+  {{/if}}
