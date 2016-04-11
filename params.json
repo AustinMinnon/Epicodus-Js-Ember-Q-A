@@ -1,0 +1,6 @@
+{
+  "name": "Question & Answer",
+  "tagline": "Ember 2.0 Q&A",
+  "body": "# Questions-answers\r\n\r\nThis is a questions and answers site. Users can share questions, as well as view and help answer them. \r\n\r\n### By _**Austin Minnon**_\r\n\r\n## Prerequisites\r\n\r\nYou will need the following things properly installed on your computer.\r\n\r\n* [Git](http://git-scm.com/)\r\n* [Node.js](http://nodejs.org/) (with NPM)\r\n* [Bower](http://bower.io/)\r\n* [Ember CLI](http://www.ember-cli.com/)\r\n* [PhantomJS](http://phantomjs.org/)\r\n\r\n## Setup & Installation\r\n\r\n* `git clone <repository-url>` this repository\r\n* change into the new directory\r\n* `npm install`\r\n* `bower install`\r\n* `ember i emberfire`\r\n* `ember i ember-bootstrap`\r\n* `ember build`\r\n* `ember s`\r\n* Visit your app at [http://localhost:4200](http://localhost:4200).\r\n\r\n## Bugs\r\n  Cannot answer question inside of question route. Each category has many questions. Each question has many answers, and each answer belongs to a question. get of undefined. (cannot find category of  question???)\r\n\r\n## Technologies Used\r\n\r\n_Javascript, Ember, EmberFire, Node, Bower, Bootstrap_\r\n\r\n\r\n### License\r\n\r\n_MIT license_\r\n\r\nCopyright (c) 2016 _**Austin Minnon**_\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
