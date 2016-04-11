@@ -4,6 +4,7 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
+//error on line 12, cannot attain question to tie answer to
   actions:{
   saveAnswer(params) {
     var newAnswer = this.store.createRecord('answer', params);

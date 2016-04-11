@@ -27,7 +27,7 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Bugs
- No known bugs.
+  Cannot answer question inside of question route. Each category has many questions. Each question has many answers, and each answer belongs to a question. get of undefined. (cannot find category of  question???)
 
 ## Technologies Used
 
