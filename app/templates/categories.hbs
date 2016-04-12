@@ -1,5 +1,7 @@
 <div class="container">
   {{#each model as |category|}}
   <p>{{#link-to 'category' category.id}}{{category.title}}{{/link-to}}</p>
+  <button class="btn btn-danger btn-xs"{{action 'delete' category}}>Delete</button>
+
 {{/each}}
 </div>

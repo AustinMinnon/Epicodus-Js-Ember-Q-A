@@ -1,4 +1,4 @@
-{{yield}}
-{{#each category.questions as |question|}}
-<li>{{question-tile question=question}}</li>
+<h3 class="center">{{category.title}}</h3><br>
+{{#each popularQuestions as |question|}}
+<li class="center">{{question-tile question=question}}</li>
 {{/each}}
