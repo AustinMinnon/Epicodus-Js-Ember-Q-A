@@ -1,7 +1,7 @@
 <div class="container">
   {{question-details question=model destroyQuestion = "destroyQuestion" update="update"}}
   {{#each model.answers as |answer|}}
-  {{answer-tile answer=answer}}
+  {{answer-tile answer=answer delete="delete"}}
   {{/each}}
   <li class="center">{{new-answer saveAnswer="saveAnswer" question=model}}</li>
 </div>
